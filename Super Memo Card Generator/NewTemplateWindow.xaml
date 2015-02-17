@@ -1,0 +1,30 @@
+﻿<Window x:Class="Super_Memo_Card_Generator.NewTemplateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NewTemplateWindow" Height="300" Width="400" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="TextStructure" TextWrapping="Wrap" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Margin="5"/>
+        <TextBox Name="TemplateName" MaxLength="15" Width="130" TextWrapping="Wrap" Grid.Column="0" Grid.Row="0" Margin="5"/>
+        <CheckBox Name="IsDefault" Content="Is default" Grid.Column="0" Grid.Row="2" Margin="5"/>
+        <ComboBox Name="AmountOfTexts" IsEditable="True" SelectedIndex="1" Grid.Column="1" Grid.Row="0" Margin="5">
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Save Template" Grid.Column="4" Grid.Row="2" Margin="5" Click="Button_Click_1"/>
+    </Grid>
+</Window>
