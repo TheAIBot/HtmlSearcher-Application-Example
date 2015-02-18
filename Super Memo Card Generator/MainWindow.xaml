@@ -39,6 +39,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             
             <TextBlock Text="Website" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Center" Margin="5"/>
@@ -50,23 +51,46 @@
             <Separator Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Margin="3" />
 
             <TextBlock Text="Text Groups" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Center" Margin="5"/>
-            <TextBox Text="F" Grid.Column="1" Grid.Row="6" Margin="5"/>
             <TextBlock Text="Group Name:" Grid.Column="0" Grid.Row="6" Margin="5"/>
-            <Button Content="Add Group" Grid.Column="1" Grid.Row="8"/>
-            <Grid Grid.Row="9" Grid.ColumnSpan="2" Height="100">
+            <TextBox Text="F" Grid.Column="1" Grid.Row="6" Margin="5"/>
+            <Button Content="Add Group" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Right" Margin="5"/>
+
+            <TextBlock Text="Group Text Name:" Grid.Column="0" Grid.Row="9" Margin="5"/>
+            <TextBox Text="F" Grid.Column="1" Grid.Row="9" Margin="5"/>
+            <Button Content="Add Group" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Right" Margin="5"/>
+
+            <TextBlock Text="Text:" Grid.Column="0" Grid.Row="11" Margin="5"/>
+            <TextBox Text="F" Grid.Column="1" Grid.Row="11" Margin="5"/>
+            <Button Content="Add Group" Grid.Column="1" Grid.Row="12" HorizontalAlignment="Right" Margin="5"/>
+            
+            <Grid Grid.Row="13" Grid.ColumnSpan="2" Height="150">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Groups" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="5"/>
-                <ListBox Grid.Row="1" Grid.Column="0" Margin="5"/>
+                <TextBlock Text="Groups" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5"/>
+                <ListBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"/>
+                <Button Content="Add" Grid.Row="2" Grid.Column="0" Margin="5"/>
+                <Button Content="Del" Grid.Row="2" Grid.Column="1" Margin="5"/>
 
-                <TextBlock Text="Group Texts" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="5"/>
-                <ListBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+                <TextBlock Text="Group Texts" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5"/>
+                <ListBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="5"/>
+                <Button Content="Add" Grid.Row="2" Grid.Column="2" Margin="5"/>
+                <Button Content="Del" Grid.Row="2" Grid.Column="3" Margin="5"/>
+
+                <TextBlock Text="Texts" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5"/>
+                <ListBox Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Margin="5"/>
+                <Button Content="Add" Grid.Row="2" Grid.Column="4" Margin="5"/>
+                <Button Content="Del" Grid.Row="2" Grid.Column="5" Margin="5"/>
             </Grid>
         </Grid>
 
