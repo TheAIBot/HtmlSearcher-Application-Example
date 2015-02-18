@@ -28,7 +28,7 @@ namespace Super_Memo_Card_Generator
     public partial class MainWindow : Window
     {
         //haven't set the TextChanged Events yet
-
+        //S
         public MainWindow()
         {
             InitializeComponent();
