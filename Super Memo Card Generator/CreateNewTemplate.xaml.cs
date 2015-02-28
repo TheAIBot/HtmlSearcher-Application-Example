@@ -57,7 +57,6 @@ namespace Super_Memo_Card_Generator
         {
             LayoutTemplate Plate = CreateTemplate();
             TemplateControl.AddTemplate(Plate);
-            UserForm.FillComboboxes();
             this.Close();
         }
 

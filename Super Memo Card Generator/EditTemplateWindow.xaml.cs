@@ -70,7 +70,6 @@ namespace Super_Memo_Card_Generator
         {
             LayoutTemplate Plate = CreateTemplate();
             TemplateControl.ChangeTemplate(PlateToChange, Plate);
-            UserForm.FillComboboxes();
             this.Close();
         }
 

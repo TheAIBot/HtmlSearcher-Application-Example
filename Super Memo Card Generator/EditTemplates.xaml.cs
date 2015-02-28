@@ -26,7 +26,6 @@ namespace Super_Memo_Card_Generator
         {
             InitializeComponent();
             UserForm = UForm;
-            this.Closing += (e,sender) => UserForm.FillComboboxes();
         }
 
         private void Window_ContentRendered(object sender, EventArgs e)
