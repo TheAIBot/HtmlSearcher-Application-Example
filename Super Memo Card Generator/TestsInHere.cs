@@ -36,12 +36,13 @@ namespace Super_Memo_Card_Generator
             TextGroup.TextsToFind.Add(T2);
 
             ScrapInfo FInfo = new ScrapInfo();
+            FInfo.Groups.Add(TextGroup);
             FInfo.WebAddresses.Add("http://www.linguee.com/english-spanish/search?source=auto&query=fish");
             FInfo.WebToAnalyze = "http://www.linguee.com/english-spanish/search?source=auto&query=fish";
 
             Stopwatch Watch = new Stopwatch();
             Watch.Start();
-            Search.FindText(FInfo);
+            Search.FindText(FInfo,false);
             Watch.Stop();
         }
     }

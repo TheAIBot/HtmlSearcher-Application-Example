@@ -63,39 +63,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CreateNewTemplate.xaml.cs">
-      <DependentUpon>CreateNewTemplate.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EditTemplates.xaml.cs">
-      <DependentUpon>EditTemplates.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EditTemplateWindow.xaml.cs">
-      <DependentUpon>EditTemplateWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GetTextsToSearchFor.xaml.cs">
-      <DependentUpon>GetTextsToSearchFor.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SuperiorMessageBox.xaml.cs">
       <DependentUpon>SuperiorMessageBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="TemplateControl.cs" />
     <Compile Include="TestsInHere.cs" />
-    <Page Include="CreateNewTemplate.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EditTemplates.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EditTemplateWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="GetTextsToSearchFor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
